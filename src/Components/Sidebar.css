@@ -3,5 +3,6 @@
     border: none !important;
     color: white !important;
     font-weight: 900 !important;
-    border-radius: 9999px;
+    text-transform: inherit !important;
+    border-radius: 999px;
 }
