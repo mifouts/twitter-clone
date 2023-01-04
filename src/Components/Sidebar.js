@@ -10,6 +10,7 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import { Button } from "@mui/material";
 
 function Sidebar() {
   return (
@@ -23,6 +24,8 @@ function Sidebar() {
       <SidebarOptions Icon={ListAltIcon} text="Lists" />
       <SidebarOptions Icon={PermIdentityIcon} text="Profile" />
       <SidebarOptions Icon={MoreHorizIcon} text="More" />
+
+      <Button>Tweet</Button>
     </div>
   );
 }
