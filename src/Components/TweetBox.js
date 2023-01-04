@@ -8,6 +8,7 @@ function TweetBox() {
       <form action="">
         <div className="tweetBox__input">
           <Avatar src="./EportfolioPICTURE.jpg" />
+          <input type="text" placeholder="What's Happening?" />
         </div>
         <Button>Tweet</Button>
       </form>
