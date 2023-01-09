@@ -8,7 +8,7 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SendIcon from "@mui/icons-material/Send";
 
-function Post({ displayName, username, verified, text, image, avatar }) {
+function Post(/*{ displayName, username, verified, text, image, avatar }*/) {
   return (
     <div className="post">
       <div className="post__avatar">
