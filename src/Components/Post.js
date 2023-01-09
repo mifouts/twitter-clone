@@ -28,10 +28,12 @@ function Post({ displayName, username, verified, text, image, avatar }) {
             <p>Build a twitter clone!</p>
           </div>
         </div>
-        <img
-          src="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
-          alt=""
-        />
+        <div>
+          <img
+            src="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
+            alt=""
+          />
+        </div>
         <div className="post__footer">
           <ChatBubbleIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
