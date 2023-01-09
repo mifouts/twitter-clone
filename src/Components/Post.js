@@ -24,10 +24,7 @@ function Post({ displayName, username, verified, text, image, avatar }) {
             <p>Build a twitter clone!</p>
           </div>
         </div>
-        <img
-          src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif"
-          alt=""
-        />
+        <img src="" alt="" />
       </div>
     </div>
   );
