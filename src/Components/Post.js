@@ -3,6 +3,9 @@ import "./Post.css";
 import { Avatar } from "@mui/material";
 import pfp from "./EportfolioPICTURE.jpg";
 import { VerifiedUser } from "@material-ui/icons";
+import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import RepeatIcon from "@mui/icons-material/Repeat";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 function Post({ displayName, username, verified, text, image, avatar }) {
   return (
@@ -25,6 +28,11 @@ function Post({ displayName, username, verified, text, image, avatar }) {
           </div>
         </div>
         <img src="" alt="" />
+        <div className="post__footer">
+          <ChatBubbleIcon />
+          <RepeatIcon />
+          <FavoriteBorderIcon />
+        </div>
       </div>
     </div>
   );
