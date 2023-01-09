@@ -18,7 +18,7 @@ function Post({ displayName, username, verified, text, image, avatar }) {
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Mitch{" "}
+              Mitch
               <span>
                 <VerifiedUser className="post__badge" />
               </span>
