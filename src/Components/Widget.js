@@ -12,6 +12,11 @@ function Widget() {
     <div className="widgets">
       <div className="widgets__input">
         <SearchIcon className="widgets__searchIcon" />
+        <input placeholder="Search Twitter" type="text" />
+      </div>
+
+      <div className="widgets__widgetsContainer">
+        <h2>What is up?</h2>
       </div>
     </div>
   );
