@@ -19,4 +19,18 @@
 
 .widgets__searchIcon {
     color: gray;
+    cursor: pointer;
+}
+
+.widgets__widgetsContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+
+.widgets__widgetsContainer > h2 {
+    font-size: 18px;
+    font-weight: 800;
 }
