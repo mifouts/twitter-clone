@@ -23,6 +23,7 @@ function Widget() {
           screenName="cleverqazi"
           options={{ height: 400 }}
         />
+        <TwitterShareButton />
       </div>
     </div>
   );
