@@ -12,7 +12,14 @@ function Feed() {
 
       <TweetBox />
 
-      <Post />
+      <Post
+        displayName="mitch fouts"
+        username="mfouts"
+        verified={true}
+        text="yooo"
+        avatar="./EportfolioPICTURE.jpg"
+        image="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
+      />
     </div>
   );
 }

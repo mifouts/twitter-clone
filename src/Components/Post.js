@@ -1,7 +1,6 @@
 import React from "react";
 import "./Post.css";
 import { Avatar } from "@mui/material";
-import pfp from "./EportfolioPICTURE.jpg";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import RepeatIcon from "@mui/icons-material/Repeat";
@@ -12,27 +11,25 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src={pfp} />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Mitch{" "}
+              {displayName}{" "}
               <span className="post__headerSpecial">
-                <VerifiedIcon className="post__badge" />
+                {verified && <VerifiedIcon className="post__badge" />} @
+                {username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>Build a twitter clone!</p>
+            <p>{text}</p>
           </div>
         </div>
         <div>
-          <img
-            src="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
-            alt=""
-          />
+          <img src={image} alt="" />
         </div>
         <div className="post__footer">
           <ChatBubbleIcon fontSize="small" />
