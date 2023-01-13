@@ -2,6 +2,7 @@ import React from "react";
 import "./Feed.css";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
+import pfp from "./EportfolioPICTURE.jpg";
 
 function Feed() {
   return (
@@ -17,7 +18,7 @@ function Feed() {
         username="mfouts"
         verified={true}
         text="yooo"
-        avatar="./EportfolioPICTURE.jpg"
+        avatar={pfp}
         image="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
       />
     </div>
