@@ -19,15 +19,16 @@ function Feed() {
       </div>
 
       <TweetBox />
-
-      <Post
-        displayName="mitch fouts"
-        username="mfouts"
-        verified={true}
-        text="yooo"
-        avatar={pfp}
-        image="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
-      />
+      {posts.map((post) => (
+        <Post
+          displayName={post.displayName}
+          username="mfouts"
+          verified={true}
+          text="yooo"
+          avatar={pfp}
+          image="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
+        />
+      ))}
     </div>
   );
 }
