@@ -19,6 +19,9 @@ function TweetBox() {
       image: tweetImage,
       avatar: { pfp },
     });
+
+    setTweetImage("");
+    setTweetMessage("");
   };
 
   return (
