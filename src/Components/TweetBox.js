@@ -11,13 +11,13 @@ function TweetBox() {
   const sendTweet = (e) => {
     e.preventDefault();
 
-    db.collection("posts").add({
-      displayName: "",
-      username: "",
+    db.collection("Posts").add({
+      displayName: "Mitch Fouts",
+      username: "mfouts",
       verified: true,
       text: tweetMessage,
       image: tweetImage,
-      avatar: { pfp },
+      avatar: pfp,
     });
 
     setTweetImage("");
