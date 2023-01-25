@@ -7,7 +7,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form action="">
         <div className="tweetBox__input">
-          <Avatar src="https://mobile.twitter.com/withoutafout/photo" />
+          <Avatar src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvinicius73.github.io%2Fgravatar-url-generator%2F&psig=AOvVaw3m0YXXoIF4GKFOTxabVOWo&ust=1674770599428000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCICytunc4_wCFQAAAAAdAAAAABAE" />
           <input type="text" placeholder="What's Happening?" />
         </div>
 
