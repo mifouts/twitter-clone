@@ -2,10 +2,24 @@ import React, { useState } from "react";
 import "./TweetBox.css";
 import { Avatar, Button } from "@mui/material";
 import pfp from "./EportfolioPICTURE.jpg";
+import db from "./firebase";
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetImage, setTweetImage] = useState("");
+
+  const sendTweet = (e) => {
+    e.preventDefault();
+
+    db.collection("posts").add({
+      displayName: "",
+      username: "",
+      verified: true,
+      text: tweetMessage,
+      image: tweetImage,
+      avatar: { pfp },
+    });
+  };
 
   return (
     <div className="tweetBox">
@@ -27,7 +41,11 @@ function TweetBox() {
           value={tweetImage}
           onChange={(e) => setTweetImage(e.target.value)}
         />
-        <Button type="submit" className="tweetBox__tweetButton">
+        <Button
+          onClick={sendTweet}
+          type="submit"
+          className="tweetBox__tweetButton"
+        >
           Tweet
         </Button>
       </form>
