@@ -22,11 +22,11 @@ function Feed() {
       {posts.map((post) => (
         <Post
           displayName={post.displayName}
-          username="mfouts"
-          verified={true}
-          text="yooo"
-          avatar={pfp}
-          image="https://media.giphy.com/media/Kiy0bxDn36N6LgLMh4/giphy.gif"
+          username={post.username}
+          verified={post.verified}
+          text={post.text}
+          avatar={post.avatar}
+          image={post.image}
         />
       ))}
     </div>
