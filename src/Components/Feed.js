@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
-import pfp from "./EportfolioPICTURE.jpg";
 import db from "./firebase";
 function Feed() {
   const [posts, setPosts] = useState([]);
