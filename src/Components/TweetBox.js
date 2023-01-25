@@ -7,7 +7,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form action="">
         <div className="tweetBox__input">
-          <Avatar imgProps="/twitter-clone/src/Components/EportfolioPICTURE.jpg" />
+          <Avatar srcSet="/twitter-clone/src/Components/EportfolioPICTURE.jpg" />
           <input type="text" placeholder="What's Happening?" />
         </div>
 
