@@ -8,9 +8,9 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SendIcon from "@mui/icons-material/Send";
 
 const Post = forwardRef(
-  ({ displayName, username, verified, text, image, avatar }) => {
+  ({ displayName, username, verified, text, image, avatar }, ref) => {
     return (
-      <div className="post">
+      <div className="post" ref={ref}>
         <div className="post__avatar">
           <Avatar src={avatar} />
         </div>
